@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+/* Estilos para el sitio web Clon del Home del Buscador Google */
+.google__body {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+header {
+    height: 60px;
+    width: 100%;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right-section {
+    align-items: center;
+    display: flex;
+    height: auto; /* Esta no puede ser mas alta que el padre  */
+    justify-content: center;
+    list-style: none;
+    width: 250px;
+}
+nav .nav-right-section a {
+    color: #000000;
+    margin-right: 10px;
+}
+nav .nav-right-section .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+}
+nav .nav-right-section img {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+main {
+    margin-top: 150px;
+    text-align: center;
+}
+main .main-logo {
+    margin: 0 auto; /* Para dar posicionamiento en la parte del medio */
+    margin-bottom: 35px;
+    width: 530px;
+}
+main .main-logo img {
+    width: 300px;
+}
+main .main-input {
+    margin: 0 auto; /* Para dar posicionamiento en la parte del medio */
+    margin-bottom: 35px;
+    width: 530px;
+}
+main .main-input-container {
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    width: 525px;
+}
+main .main-input input {
+    border: none;
+    height: 40px;
+    outline: none; /* Sirve para quitar el borde generado cuando damos click al input */
+    width: 450px;
+}
+main .main-input-container:hover {
+    border-color: rgba(223,225,229,0);
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+main .main-input .search-icon, .micro-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+main .main-input .search-icon {
+    background-image: url(./Google_Elements/iconosearch.png);
+    opacity: 0.5;
+}
+main .main-input .micro-icon {
+    background-image: url(./Google_Elements/iconomic.png);
+    cursor: pointer;
+}
+main .main-buttons {
+    margin: 0 auto;
+    width: 530px;
+}
+main .main-buttons div {
+    display: inline-block;
+}
+main .main-buttons button {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    color: #5f6368;
+    font-size: 14px;
+    height: 36px;
+    margin-right: 15px;
+    padding: 0 15px;
+}
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    color: #222222;
+    cursor: pointer;
+}
+.footer-google {
+    align-items: center;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    bottom: 0;
+    display: grid;
+    font-size: 13px;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+}
+.footer-google ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+}
+.footer-google .footer-left {
+    justify-self: left;
+}
+.footer-google .footer-right {
+    justify-self: right;
+}
+.footer-google ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
+/* Estilos para el Body, header y menú del Reproductor web */
+.body__reproductor {
+  margin: 0px;
+  background-color: #8f57fd;
+  font-family: 'Mulish', sans-serif;
+}
+.header__reproductor {
+  align-items: center;
+  background-color: #8f57fd;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  width: 100%;
+}
+.header__img {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 200px;
+}
+.header__menu {
+  margin-right: 30px;
+}
+.header__menu ul {
+  display: none;
+  list-style: none;
+  margin: 0px 0px 0px -14px;
+  padding: 0px;
+  position: absolute;
+  text-align: right;
+  width: 100px;
+}
+.header__menu:hover ul, ul:hover {
+  display: block;
+}
+.header__menu li{
+  margin: 10px 0px;
+}
+.header__menu li a {
+  color: white;
+  text-decoration: none;
+}
+.header__menu li a:hover {
+  text-decoration: underline;
+}
+.header__menu--profile {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  margin-right: 8px;
+}
+.header__menu--profile img {
+  margin-right: 8px;
+  width: 65px;
+}
+.header__menu--profile p {
+  color: white;
+  margin: 0px;
+  padding: 0;
+}
+.seeker {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;    
+}
+.seeker__title {
+  color: white;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.seeker__input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  height: 50px;
+  padding: 0px 20px;
+  width: 70%;
+}
+::placeholder {
+  color: white;
+}
+/* Estilos para los section de los carrusel del Reproductor web */
+.categories__title {
+  color: white;
+  padding: 0%;
+  margin: 10px 50px;
+}
+.carousel {
+  overflow: scroll;
+  padding: 30px;
+  position: relative;
+  width: auto;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel__container {
+  margin: 40px 0px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
+.carousel__container:hover .carousel-item {
+  opacity: 0.3;
+}
+.carousel__container:hover .carousel-item:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+.carousel-item {
+  background-color: palevioletred;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  height: 250px;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: 450ms all;
+  transform-origin: center left;
+  width: 200px;
+}
+.carousel-item:hover ~ .carousel-item {
+  transform: translate3d(100px, 0, 0);
+}
+.carousel-item__img {
+  height: 250px;
+  object-fit: cover;
+  width: 200px;
+}
+.carousel-item__details {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  color:white;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  font-size: 10px;
+  justify-content: flex-end;
+  opacity: 0;
+  padding: 10px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 450ms opacity;   
+}
+.carousel-item__details:hover {
+  color: white;
+  opacity: 1;
+}
+.carousel-item__details img {
+  height: 25px;
+  width: 25px;
+}
+.carousel-item__details p{
+  margin: 6px;
+}
+.carousel-item__details--title {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 0;
+}
+.carousel-item__details--subtitle {
+  color: #FFFFFF;
+  font-size: 7px;
+}
+.footer__reproductor {
+  align-items: center;
+  background-color: #ab88ff;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  top: 2200px; 
+}
+.footer__reproductor a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.footer__reproductor a:hover {
+  text-decoration: underline;
+}

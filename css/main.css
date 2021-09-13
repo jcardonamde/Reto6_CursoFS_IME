@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background: aquamarine;
+    position: relative;
+}
+.contenedor {
+    background: lightblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+    left: 500px;
+    padding: 30px;
+}
+.contenedor h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+.contenedor ul {
+    list-style: none;
+}
+.contenedor li {
+    align-items: center;
+}
+.contenedor li a{
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.contenedor button {
+    border-radius: 50px;
+    margin: 50px 0px 0px 100px;
+    height: 50px;
+    width: 200px;
+}
+.contenedor button:hover {
+    background: orange;
+}
